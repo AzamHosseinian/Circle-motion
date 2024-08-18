@@ -1,0 +1,54 @@
+
+.main-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0074D9; 
+  }
+  
+  
+  .button-container {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; 
+  }
+  
+
+  .static-circle {
+    width: 32px; 
+    height: 32px;
+    border-radius: 50%;
+    background-color: #0074D9; 
+  }
+  
+  
+  .animated-circle {
+    width: 16px; 
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FF69B4; 
+    position: absolute;
+    left: 0;
+    animation: moveButton 2s forwards;
+  }
+  
+
+  @keyframes moveButton {
+    10% { left: calc(100% - 1rem); }
+    20% { left: calc(100% - 1rem - 20px); }
+    30% { left: calc(100% - 1rem); }
+    40% { left: calc(100% - 1rem - 6px); }
+    50% { left: calc(100% - 1rem); }
+    60% { left: 0; }
+    70% { left: 20px; }
+    80% { left: 0px; }
+    90% { left: 6px; }
+    100% { left: 0px; }
+  }
+  
